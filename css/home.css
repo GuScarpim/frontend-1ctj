@@ -1,4 +1,75 @@
+.nav-transparent {
+  position: fixed;
+  background-color: transparent;
+  z-index: 3;
+}
+
+.section-container {
+  margin: 0 65px;
+}
+
 .logo-img {
-	width: 150px;
+	width: 90px;
   object-fit: contain;
+}
+
+.overlay {
+  width: 100%;
+  height: 105vh;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all linear .5s;
+  z-index: 2;
+}
+
+.overlay:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.video-principal {
+  position: relative;
+  max-width: 100%;
+  width: 100vw;
+  max-height: 100%;
+  z-index: 1;
+}
+
+.video-description {
+  position: absolute;
+  width: 650px;
+  top: 45%;
+  left: 60px;
+  z-index: 3;
+  padding: 6px;
+  font-size: 1.225rem;
+}
+
+.video-description p {
+  margin-bottom: 30px;
+}
+
+.video-description button {
+  padding: 10px 20px;
+  font-size: 1.25rem;
+}
+
+.video-description .btn-secondary {
+  opacity: 0.8;
+}
+
+.content-cards {
+  position: relative;
+  z-index: 3;
+  transform: translateY(-150px);
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 14px;
+}
+
+.img-carousel {
+  height: 182px;
+  object-fit: cover;
+  border-radius: 6px;
 }
