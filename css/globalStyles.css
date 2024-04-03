@@ -25,4 +25,5 @@ p {
 
 body {
   background-color: #010100;
+  overflow-x: hidden;
 }

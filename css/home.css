@@ -10,7 +10,6 @@
 
 .logo-img {
 	width: 90px;
-  object-fit: contain;
 }
 
 .overlay {
@@ -70,6 +69,30 @@
 
 .img-carousel {
   height: 182px;
-  object-fit: cover;
   border-radius: 6px;
+}
+
+.video-carousel {
+  height: 200px;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+}
+
+.last-video-carousel {
+  position: absolute;
+  right: 0;
+}
+
+.carousel-control-prev {
+  left: -150px;
+}
+
+.carousel-control-next {
+  right: -150px;
+}
+
+.carousel-indicators { 
+  bottom: -45px;
 }
