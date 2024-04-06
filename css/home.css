@@ -70,19 +70,23 @@
 .img-carousel {
   height: 182px;
   border-radius: 6px;
-}
-
-.video-carousel {
-  height: 200px;
-  border-radius: 6px;
   cursor: pointer;
-  position: relative;
   z-index: 3;
+  position: relative;
 }
 
-.last-video-carousel {
-  position: absolute;
-  right: 0;
+.img-carousel:hover {
+  border-radius: 6px;
+  transform: scale(.9);
+  transition: all .2s ease;
+}
+
+.video-modal {
+  width: 100%;
+}
+
+#title_modal {
+  color: #000;
 }
 
 .carousel-control-prev {

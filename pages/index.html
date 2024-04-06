@@ -30,9 +30,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link text-white active" aria-current="page" href="/pages/index.html">Home</a>
-          <a class="nav-link text-white" href="#">Show Films</a>
-          <a class="nav-link text-white" href="#">Movies</a>
+          <a class="nav-link text-white active" aria-current="page" href="/pages/index.html">Ínicio</a>
+          <a class="nav-link text-white" href="#">Séries</a>
+          <a class="nav-link text-white" href="#">Filmes</a>
+          <a class="nav-link text-white" href="#">Minha lista</a>
         </div>
       </div>
     </div>
@@ -54,7 +55,23 @@
       </div>
     </article>
 
+    <div class="modal fade" id="video-modal" tabindex="-1" aria-labelledby="video-modal-Label" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="title_modal"></h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <video playsinline="playsinline" autoplay="autoplay" class="video-modal">
+              <source id="video-source-modal" src="">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
     <article class="content-cards mt-10">
+
       <h1 class="title">Combinam com você</h1>
 
       <div id="carouselExampleIndicators" class="carousel slide">
