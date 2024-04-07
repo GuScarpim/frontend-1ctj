@@ -31,6 +31,21 @@ async function getVideos(query, perPage) {
   return data;
 }
 
+const watch = document.getElementById("watch");
+watch.addEventListener('click', function () {
+  const videoSource = document.getElementById('video-source-modal');
+  const videoTitle = document.getElementById('title_modal');
+  videoSource.src = "https://videos.pexels.com/video-files/13211510/13211510-sd_640_360_30fps.mp4";
+  videoTitle.innerHTML = 'Vídeo Pig';
+  const videoElement = document.querySelector('.video-modal');
+  videoElement.load();
+  
+  // Exibir o modal após carregar o vídeo
+  const myModal = new bootstrap.Modal(document.getElementById('video-modal'));
+  myModal.show();
+});
+
+
 // Função assíncrona para buscar e atribuir os dados a mediaItems para cada artigo
 async function fetchDataForArticle(articleIndex) {
   try {
@@ -54,7 +69,7 @@ async function fetchDataForArticle(articleIndex) {
     // Variáveis para controlar o número de itens por linha e o número total de linhas
     const itemsPerRow = 6;
     const totalRows = Math.ceil(mediaItems.videos.length / itemsPerRow);
-    
+
     // Obtém os itens favoritos do localStorage ou inicializa um array vazio
     let favoriteVideos = JSON.parse(localStorage.getItem(`favoriteVideos${articleIndex}`)) || [];
     // Loop para criar cada linha do carrossel
