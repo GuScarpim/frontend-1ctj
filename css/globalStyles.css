@@ -24,8 +24,9 @@ p {
 }
 
 body {
-  background-color: #010100;
+  /* background-color: #010100; */
   overflow-x: hidden;
+  background-image: url(/assets/background_img.png);
 }
 
 .content-cards {
