@@ -1,0 +1,43 @@
+.img-carousel {
+  height: 182px;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 3;
+  position: relative;
+}
+
+.img-carousel:hover {
+  border-radius: 6px;
+  transform: scale(.9);
+  transition: all .2s ease;
+}
+
+.heart-icon {
+  position: absolute;
+  z-index: 4;
+  top: 14px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.heart-icon:hover {
+  transform: scale(1.1);
+  transition: all .2s ease;
+  color: red;
+}
+
+.heart-icon-active {
+  color: red;
+}
+
+.carousel-control-prev {
+  left: -150px;
+}
+
+.carousel-control-next {
+  right: -150px;
+}
+
+.carousel-indicators {
+  bottom: -45px;
+}

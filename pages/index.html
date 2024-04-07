@@ -13,10 +13,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/carousel.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/modal.css">
+  <link rel="stylesheet" href="../css/navbar.css">
   <link rel="stylesheet" href="../css/globalStyles.css">
 </head>
 
 <body>
+  <div id="loading-container">
+    <div id="loading-spinner"></div>
+  </div>
   <nav class="navbar navbar-expand-lg nav-transparent">
     <div class="container-fluid px-5 py-2">
       <a href="/pages/index.html">
@@ -30,10 +37,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link text-white active" aria-current="page" href="/pages/index.html">Ínicio</a>
-          <a class="nav-link text-white" href="#">Séries</a>
-          <a class="nav-link text-white" href="#">Filmes</a>
-          <a class="nav-link text-white" href="#">Minha lista</a>
+          <a class="nav-link text-white active" aria-current="page" href="index.html">Ínicio</a>
+          <a class="nav-link text-white" href="animals.html">Animais</a>
+          <a class="nav-link text-white" href="space.html">Espaço</a>
+          <a class="nav-link text-white" href="marine.html">Vida marinha</a>
+          <a class="nav-link text-white" href="listFavorite.html">Minha lista</a>
         </div>
       </div>
     </div>
@@ -43,12 +51,11 @@
     <article class="relative">
       <div class="overlay"></div>
       <video playsinline="playsinline" autoplay="autoplay" id="my-video" class="video-principal">
-        <source src="https://cdn.pixabay.com/video/2016/04/29/2922-164833285_large.mp4">
+        <source src="https://videos.pexels.com/video-files/13211510/13211510-sd_640_360_30fps.mp4">
       </video>
       <div class="video-description">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla at quo veritatis laboriosam adipisci magnam
-          laudantium nobis, quidem accusantium eius aliquam delectus maxime harum dicta corrupti libero deleniti
-          consequatur reiciendis!
+        <p>Os porcos adoram banhos de lama não apenas para se refrescar, mas também para proteger sua pele sensível dos
+          raios solares e de picadas de insetos. A lama também atua como um protetor natural contra infecções cutâneas.
         </p>
         <button class="btn btn-light"><i class="fas fa-play me-2"></i> Assistir</button>
         <button class="btn btn-secondary ms-3"><i class="far fa-clipboard me-2"></i> Mais informações</button>
@@ -63,26 +70,27 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <video playsinline="playsinline" autoplay="autoplay" class="video-modal">
+            <video controls autoplay="autoplay" class="video-modal">
               <source id="video-source-modal" src="">
             </video>
           </div>
         </div>
       </div>
     </div>
-    <article class="content-cards mt-10">
 
-      <h1 class="title">Combinam com você</h1>
+    <!-- Primeiro artigo -->
+    <article class="content-cards mt-10 translateY">
+      <h1 class="title">Animais</h1>
 
-      <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators"></div>
-        <div class="carousel-inner"></div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      <div id="carouselExampleIndicators1" class="carousel slide">
+        <div class="carousel-indicators carousel-indicators-1"></div>
+        <div class="carousel-inner carousel-inner-1"></div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1"
           data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1"
           data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
@@ -90,7 +98,59 @@
       </div>
     </article>
 
+    <!-- Segundo artigo -->
+    <article class="content-cards mt-10">
+      <h1 class="title">Espaço</h1>
+
+      <div id="carouselExampleIndicators2" class="carousel slide">
+        <div class="carousel-indicators carousel-indicators-2"></div>
+        <div class="carousel-inner carousel-inner-2"></div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </article>
+
+    <!-- Terceiro artigo -->
+    <article class="content-cards mt-10">
+      <h1 class="title">Fundo do mar</h1>
+
+      <div id="carouselExampleIndicators3" class="carousel slide">
+        <div class="carousel-indicators carousel-indicators-3"></div>
+        <div class="carousel-inner carousel-inner-3"></div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </article>
   </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="/assets/logo_netflix.png" alt="Footer Image" class="footer-image">
+        </div>
+        <div class="col-md-6">
+          <p class="footer-text">Texto do footer aqui.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -99,7 +159,9 @@
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/f50700485d.js" crossorigin="anonymous"></script>
-  <script src="/scripts/index.js" crossorigin="anonymous"></script>
+  <script src="/scripts/matchFilms.js" crossorigin="anonymous"></script>
+  <script src="/scripts/loading.js" crossorigin="anonymous"></script>
+  <script src="/scripts/navBarScroll.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,17 +1,3 @@
-.nav-transparent {
-  position: fixed;
-  background-color: transparent;
-  z-index: 3;
-}
-
-.section-container {
-  margin: 0 65px;
-}
-
-.logo-img {
-	width: 90px;
-}
-
 .overlay {
   width: 100%;
   height: 105vh;
@@ -54,49 +40,4 @@
 
 .video-description .btn-secondary {
   opacity: 0.8;
-}
-
-.content-cards {
-  position: relative;
-  z-index: 3;
-  transform: translateY(-150px);
-}
-
-.title {
-  font-size: 1.5rem;
-  margin-bottom: 14px;
-}
-
-.img-carousel {
-  height: 182px;
-  border-radius: 6px;
-  cursor: pointer;
-  z-index: 3;
-  position: relative;
-}
-
-.img-carousel:hover {
-  border-radius: 6px;
-  transform: scale(.9);
-  transition: all .2s ease;
-}
-
-.video-modal {
-  width: 100%;
-}
-
-#title_modal {
-  color: #000;
-}
-
-.carousel-control-prev {
-  left: -150px;
-}
-
-.carousel-control-next {
-  right: -150px;
-}
-
-.carousel-indicators { 
-  bottom: -45px;
 }

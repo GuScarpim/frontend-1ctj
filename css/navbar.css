@@ -1,0 +1,15 @@
+.nav-transparent {
+  position: fixed;
+  background-color: transparent;
+  z-index: 5;
+  width: 100%;
+  transition: background-color 0.6s ease-in-out;
+}
+
+.navbar-custom {
+  background-color: #010010;
+}
+
+.logo-img {
+  width: 90px;
+}
